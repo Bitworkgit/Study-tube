@@ -26,7 +26,7 @@ Em caso de dificuldade por favor pedir ajuda a um dos membros do grupo responsá
 
 ## Manual de uso
 * 1- ligue o apache e o mysql usando o painel do xampp
-* 2- vá dentro da pasta do projeto em src/std
+* 2- vá dentro da pasta do projeto em src/std todo o desenvolvimento vai ocorrer nessa pasta
 * 3- adicione essa pasta na sua IDE
 
 Rode o seguinte comando
@@ -34,3 +34,15 @@ Rode o seguinte comando
 php artisan serve
 ```
 Após isso basta acessar http://127.0.0.1:8000
+
+### Front-End
+para o Desenvolvimento frontEnd basta localizar a pasta Resources de dentro de src/std e a pasta public/css, Mapa de resources:
+* resources 
+ ** views
+   *** aqui fica o html das paginas porém em outro formato...
+ ** js
+   ** App.js 
+      *** Aqui fica o arquivo principal js, porém só será necessario mexer nele na alteração ou criação de componentes
+   ** Components
+ ** sass
+   *** arquivos sass
