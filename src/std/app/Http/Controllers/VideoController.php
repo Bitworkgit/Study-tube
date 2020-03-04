@@ -15,15 +15,15 @@ class VideoController extends Controller
 
     protected function validator($creds){
         return Validator::make($creds, [
-            'Titulo' => ['required', 'string', 'max:255'],
-            'Descrição' => ['required'],
+            'title' => ['required', 'string', 'max:255'],
+            'descript' => ['required'],
             "video" => ['required',"mimes:mp4,mkv,avi,wma,wmv"]
         ]);
     }
 
     protected function upload(Request $request){
         if ($request->hasFile('video')) {
-            $creds = $request->only(["Titulo","Descrição","video"]);
+            $creds = $request->only(["title","descript","video"]);
             $validator = $this->validator($creds);
             if($validator->fails()){
                 return redirect()->route('video.index')
@@ -44,9 +44,9 @@ class VideoController extends Controller
     protected function save($creds,$id,$path){
         return Video::create([
             "user_id" => $id,
-            "titulo" => $creds["Titulo"],
-            "descript" => $creds["Descrição"],
-            "caminho" => $path
+            "title" => $creds["title"],
+            "descript" => $creds["descript"],
+            "path" => $path
         ]);
     }
 

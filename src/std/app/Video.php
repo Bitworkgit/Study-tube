@@ -9,7 +9,7 @@ class Video extends Model
     protected $table = "videos";
 
     protected $fillable = [
-        'user_id', 'titulo', 'descript',"caminho",
+        'user_id', 'title', 'descript',"path",
     ];
 
     public $timestamps = false;

@@ -17,8 +17,8 @@
             <br/><br/>
             {{ Form::open(array('url' => route('video.upload'), 'files' => true))}}
                 {{ Form::token() }}
-                <input name="Titulo" type="text" id="Titulo" placeholder="Titulo"><br/><br/>
-                <textarea name="Descrição" class="fields" placeholder="Descrição"></textarea><br/><br/>
+                <input name="title" type="text" id="Titulo" placeholder="Titulo"><br/><br/>
+                <textarea name="descript" class="fields" placeholder="Descrição"></textarea><br/><br/>
                 {{ Form::file("video",["name" => "video", "id" => "video"])}}<br/><br/><br/>
                 {{ Form::submit('Upload', ["class" => "bt"]) }}
             {{ Form::close() }}
