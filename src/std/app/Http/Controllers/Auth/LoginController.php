@@ -45,7 +45,7 @@ class LoginController extends Controller
         if(Auth::attempt($campos)){
             return redirect()->route('painel.index');
         } else { 
-            return redirect()->route('user.enter')->with('warning','frase de erro');
+            return redirect()->route('user.enter')->with('warning','Verifique seus dados.');
         }
     }
 
