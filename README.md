@@ -36,13 +36,4 @@ php artisan serve
 Após isso basta acessar http://127.0.0.1:8000
 
 ### Front-End
-para o Desenvolvimento frontEnd basta localizar a pasta Resources de dentro de src/std e a pasta public/css, Mapa de resources:
-* resources 
- ** views
-   *** aqui fica o html das paginas porém em outro formato...
- ** js
-   ** App.js 
-      *** Aqui fica o arquivo principal js, porém só será necessario mexer nele na alteração ou criação de componentes
-   ** Components
- ** sass
-   *** arquivos sass
+para o Desenvolvimento frontEnd basta localizar a pasta Resources de dentro de src/std e a pasta public/css.
