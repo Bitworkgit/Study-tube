@@ -1,0 +1,52 @@
+#caixa {
+    border: 1px solid  rgb(0, 132, 255);;
+    height: 350px;
+    width: 40%;
+    -webkit-box-shadow: 0px 0px 6px 1px rgb(0, 132, 255);
+    -moz-box-shadow: 0px 0px 6px 1px rgb(0, 132, 255);
+    box-shadow: 0px 0px 6px 1px rgb(0, 132, 255);
+    background-color: rgba(0, 132, 255, 0.212);
+}
+
+#Titulo {
+    width: 65.5%;
+    margin-left: 1%;
+    border-color: rgb(0, 132, 255);
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    background-color: rgba(0, 132, 255, 0);
+}
+
+#Titulo:focus{
+    outline: none;
+}
+
+#Video{
+    margin-left: -15%;
+}
+
+label {
+    margin-left: -58%;
+}
+
+.fields {
+    margin-left: 0%;
+    border: 2px solid rgb(0, 132, 255);
+    width: 65%;
+    height: 100px;
+    background-color: rgba(0, 132, 255, 0);
+}
+
+.fields:focus{
+    outline: none;
+}
+
+.bt {
+    width: 34%;
+    height: 40px;
+    color: white;
+    background-color:rgb(0, 91, 177);
+    border: 1px solid rgb(0, 91, 177);
+    margin-left: 0%;
+}

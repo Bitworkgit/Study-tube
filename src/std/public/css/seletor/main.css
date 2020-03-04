@@ -1,0 +1,35 @@
+@keyframes entrar {
+    0% { 
+        color: rgb(1, 41, 218);
+        text-shadow: 2px 1px 4px rgb(1, 41, 218);
+    }
+    100% {
+        color: rgb(0, 174, 255);
+        text-shadow: 2px 1px 4px rgb(0, 174, 255);}
+}
+
+@keyframes sair {
+    100% { 
+        color: rgb(1, 41, 218);
+        text-shadow: 2px 1px 4px rgb(1, 41, 218);
+    }
+    0% {
+        color: rgb(0, 174, 255);
+        text-shadow: 2px 1px 4px rgb(0, 174, 255);}
+}
+
+a {
+    font-size: 170px;
+    color: rgb(1, 41, 218);
+    text-shadow: 2px 1px 4px rgb(1, 41, 218);
+}
+
+a:hover {
+    animation: entrar 1s;
+    animation-fill-mode: forwards;
+}
+
+a:not(:hover) {
+    animation: sair 1s;
+    animation-fill-mode: forwards;
+}

@@ -1,0 +1,38 @@
+.carcaca {
+    height: 360px;
+    width: 25%;
+    -webkit-box-shadow: 0px 0px 26px 1px rgb(0, 132, 255);
+    -moz-box-shadow: 0px 0px 26px 1px rgb(0, 132, 255);
+    box-shadow: 0px 0px 26px 1px rgb(0, 132, 255);
+    margin-top: 6%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.entrada {
+    margin-left: 24%;
+    margin-top: 15%;
+}
+
+.fields {
+    margin-left: 15%;
+    border-color: rgb(0, 132, 255);
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    width: 65%;
+}
+
+input:focus{
+    outline: none;
+    color: rgb(0, 91, 177);
+}
+
+.bt {
+    width: 34%;
+    height: 40px;
+    color: white;
+    background-color:rgb(0, 91, 177);
+    border: 1px solid rgb(0, 91, 177);
+    margin-left: 30%;
+}
